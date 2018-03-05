@@ -1,17 +1,18 @@
-var emp1 = {};
-emp1.firstN = "Michael";
-emp1.lastN = "scott";
+function createBicycle(cadence, speed, gear){
+    var newBicycle  ={};
 
-var emp2 = {};
-emp2.firstN = "Dwight";
-emp2.lastN = "Schrute";
+    newBicycle.cadence  = cadence;
+    newBicycle.speed    = speed;
+    newBicycle.gear     = gear;
 
-function Employee(firstN, lastN, position, gender){
-    this.firstN   =firstN;
-    this.lastN    =lastN;
-    this.position = position;
-    this.gender   = gender;
+    return newBicycle;
+}//end function createBicycle
+
+function bicycleConstructor(cadence, speed, gear){
+    this.cadence    = cadence;
+    this.speed      = speed;
+    this.gear       = gear;
 }
 
-var emp3 =  new Employee('bryant', 'vail', 'developer', 'male');
-console.log(emp3);
+var bi  = new bicycleConstructor(50, 20, 4);
+console.log(bi);
