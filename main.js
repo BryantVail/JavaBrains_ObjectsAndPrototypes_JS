@@ -16,3 +16,6 @@ function createEmployeeObject(firstN, lastN, position, gender){
 
     return newObj;
 }
+
+var emp3 = createEmployeeObject('bryant', 'vail', 'developer', 'male');
+console.log(emp3);
