@@ -6,16 +6,12 @@ var emp2 = {};
 emp2.firstN = "Dwight";
 emp2.lastN = "Schrute";
 
-function createEmployeeObject(firstN, lastN, position, gender){
-    var newObj = {};
-
-    newObj.firstN   =firstN;
-    newObj.lastN    =lastN;
-    newObj.position = position;
-    newObj.gender   = gender;
-
-    return newObj;
+function Employee(firstN, lastN, position, gender){
+    this.firstN   =firstN;
+    this.lastN    =lastN;
+    this.position = position;
+    this.gender   = gender;
 }
 
-var emp3 = createEmployeeObject('bryant', 'vail', 'developer', 'male');
+var emp3 =  new Employee('bryant', 'vail', 'developer', 'male');
 console.log(emp3);
