@@ -8,11 +8,11 @@ function createBicycle(cadence, speed, gear){
     return newBicycle;
 }//end function createBicycle
 
-function bicycleConstructor(cadence, speed, gear){
+function Bicycle(cadence, speed, gear){ //start constructors w/ Capital casing, **this is a professional pattern
     this.cadence    = cadence;
     this.speed      = speed;
     this.gear       = gear;
 }
 
-var bi  = new bicycleConstructor(50, 20, 4);
+var bi  = new Bicycle(50, 20, 4);
 console.log(bi);
